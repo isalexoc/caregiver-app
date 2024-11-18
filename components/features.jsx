@@ -22,7 +22,7 @@ const FeatureCard = ({ title, description, icon, linkHref, bgImage }) => {
           className="object-cover group-hover:scale-105 transition-all duration-300"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-background/90 to-background/60 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background/50 to-background/20 z-10"></div>
       <CardHeader className="relative z-20">
         <div className="w-16 h-16 rounded-full dark:bg-black/70 flex items-center justify-center mb-4 transition-colors duration-300">
           {icon}
@@ -76,14 +76,14 @@ const Features = () => {
             description="Our team consists of highly trained and compassionate professionals dedicated to providing exceptional care."
             icon={<UserCheck className="w-8 h-8 text-primary-foreground" />}
             linkHref="/about/our-team"
-            bgImage="https://images.pexels.com/photos/7551741/pexels-photo-7551741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            bgImage="/team2.jpg"
           />
           <FeatureCard
             title="24/7 Support"
             description="We offer round-the-clock assistance, giving you and your loved ones peace of mind at all times."
             icon={<HeartPulse className="w-8 h-8 text-primary-foreground" />}
             linkHref="/services/24-7-support"
-            bgImage="https://images.pexels.com/photos/7551644/pexels-photo-7551644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            bgImage="/support.jpg"
           />
         </div>
         <div className="text-center">
