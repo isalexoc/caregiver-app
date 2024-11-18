@@ -78,7 +78,7 @@ body {
   }
 
   .btn-primary {
-    @apply bg-primary-600 text-white hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600;
+    @apply bg-primary-900 text-white hover:bg-primary-700 dark:bg-primary-900 dark:hover:bg-primary-600;
   }
 
   /* Container styles */
