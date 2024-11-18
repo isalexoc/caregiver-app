@@ -16,7 +16,6 @@ function AuthButton() {
       <SignedIn>
         <div className="flex justify-end">
           <UserButton
-            afterSignOutUrl="/"
             appearance={{
               elements: {
                 avatarBox: "w-10 h-10",

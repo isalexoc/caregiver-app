@@ -76,7 +76,7 @@ export default function CareProcess() {
           ))}
         </div>
         <div className="mt-16 flex justify-center">
-          <div className="w-full max-w-2xl h-2 bg-gradient-to-r from-blue-500 via-green-500 via-purple-500 to-red-500 rounded-full" />
+          <div className="w-full max-w-2xl h-2 bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 rounded-full" />
         </div>
       </div>
     </section>
