@@ -22,30 +22,31 @@ export default function AboutUsSectionComponent() {
           <div className="lg:w-1/2 grid grid-cols-2 gap-4 sm:gap-6">
             {[
               {
-                src: "/placeholder.svg?height=300&width=300",
+                src: "/wwa1.jpg",
                 alt: "Caregiver assisting an elderly person",
               },
               {
-                src: "/placeholder.svg?height=300&width=300",
+                src: "/wwa2.jpg",
                 alt: "Home care equipment",
               },
               {
-                src: "/placeholder.svg?height=300&width=300",
+                src: "/wwa3.jpg",
                 alt: "Caregiver and client smiling",
               },
               {
-                src: "/placeholder.svg?height=300&width=300",
+                src: "/wwa4.jpg",
                 alt: "Medication management",
               },
             ].map((image, index) => (
               <div
                 key={index}
-                className="relative aspect-square rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:scale-105"
+                className="relative aspect-square rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:scale-105 h-36 lg:h-60 "
               >
                 <Image
                   src={image.src}
                   alt={image.alt}
                   fill
+                  sizes="300px"
                   className="object-cover"
                 />
               </div>

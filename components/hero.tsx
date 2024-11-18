@@ -22,6 +22,8 @@ const Hero = () => {
           alt="Happy elderly couple sitting together on their couch, smiling while looking at a laptop"
           fill
           priority
+          loading="eager"
+          sizes="(max-width: 1024px) 100vw, 50vw"
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/70 to-background"></div>
@@ -60,7 +62,9 @@ const Hero = () => {
                 alt="Happy elderly couple sitting together on their couch, smiling while looking at a laptop"
                 fill
                 priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center"
+                loading="eager"
               />
             </div>
             <div className="absolute -bottom-6 left-4 right-4 bg-card shadow-lg rounded-lg p-6 dark:bg-gray-800/90 backdrop-blur-sm">

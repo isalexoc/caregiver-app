@@ -41,11 +41,11 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="container-custom header-nav">
-        <Link href="/" className="link-primary">
+        <Link href="/" className="link-primary relative h-10 w-32">
           <Image
             src={logo}
-            height={50}
-            width={200}
+            fill
+            sizes="120px"
             alt="Essential Care Services Logo"
           />
         </Link>

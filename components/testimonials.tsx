@@ -82,6 +82,7 @@ export default async function Testimonials() {
                       src={testimonial.picture}
                       alt={testimonial.name}
                       fill
+                      sizes="50px"
                       className="object-cover"
                     />
                   </div>

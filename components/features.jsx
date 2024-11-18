@@ -42,8 +42,13 @@ const FeatureCard = ({ title, description, icon, linkHref, bgImage }) => {
           asChild
           className="font-semibold transition-colors duration-300 bg-primary hover:bg-primary/90 text-white dark:text-black"
         >
-          <Link href={linkHref} className="flex items-center">
-            Learn More <ArrowRight className="ml-2 w-4 h-4" />
+          <Link
+            href={linkHref}
+            className="flex items-center"
+            aria-label={`Learn more about ${title}`}
+          >
+            Learn More <span className="sr-only">about {title}</span>{" "}
+            <ArrowRight className="ml-2 w-4 h-4" />
           </Link>
         </Button>
       </CardFooter>

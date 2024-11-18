@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-gray-100">
-              Essential Care
+              Essential Care Services
             </h3>
             <p className="text-gray-700 dark:text-gray-300">
               Providing quality care services for those in need.
