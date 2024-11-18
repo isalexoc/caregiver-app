@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     title: "Essential Care Services | Compassionate Home Care",
     description:
       "Providing high-quality, personalized home care services for seniors and individuals with disabilities.",
-    url: "https://caregiver-app-zeta.vercel.app",
+    url: "https://www.ecservices.app",
     siteName: "Essential Care Services",
     images: [
       {
-        url: "https://caregiver-app-zeta.vercel.app/og-image.png",
+        url: "https://www.ecservices.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Essential Care Services - Compassionate Home Care",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Essential Care Services | Compassionate Home Care",
     description:
       "High-quality, personalized home care services for seniors and individuals with disabilities.",
-    images: ["https://caregiver-app-zeta.vercel.app/twitter-image.png"],
+    images: ["https://www.ecservices.app/twitter-image.png"],
     creator: "@EssentialCare",
   },
   robots: {
@@ -60,10 +60,10 @@ export const metadata: Metadata = {
     yandex: "YOUR_YANDEX_VERIFICATION_CODE",
   },
   alternates: {
-    canonical: "https://caregiver-app-zeta.vercel.app",
+    canonical: "https://www.ecservices.app",
     languages: {
-      "en-US": "https://caregiver-app-zeta.vercel.app",
-      "es-ES": "https://caregiver-app-zeta.vercel.app/es",
+      "en-US": "https://www.ecservices.app",
+      "es-ES": "https://www.ecservices.app/es",
     },
   },
   icons: {
