@@ -1,39 +1,74 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-import React from "react";
+import { ArrowRight, Phone, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function CallToAction() {
   return (
-    <section className="bg-secondary py-12 px-4 rounded-lg mb-24">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h2 className="text-3xl font-bold mb-6 text-secondary-foreground">
-              Ready to Get Started?
-            </h2>
-            <p className="text-xl text-secondary-foreground/80 mb-8">
-              Contact us today to learn more about our services and how we can
-              help you or your loved ones.
-            </p>
-            <Link
-              href="/contact"
-              className="btn btn-primary py-3 px-6 text-lg inline-flex items-center hover:scale-105 transition-transform duration-300"
-            >
-              Contact Us
-              <ArrowRight className="ml-2" size={20} />
-            </Link>
-          </div>
-          <div>
-            <Image
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=300&q=80"
-              alt="Contact Us"
-              width={500}
-              height={300}
-              className="rounded-lg w-full h-auto"
-            />
-          </div>
-        </div>
+    <section className="py-24 px-4 mb-24 bg-gradient-to-br from-secondary/50 to-primary/50 rounded-3xl overflow-hidden relative">
+      <div className="absolute inset-0 bg-grid-white/25 [mask-image:linear-gradient(to_bottom,white,transparent)] dark:bg-grid-black/25"></div>
+      <div className="container mx-auto relative z-10">
+        <Card className="bg-background/80 backdrop-blur-sm border-none shadow-2xl">
+          <CardContent className="p-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <h2 className="text-4xl font-bold text-primary">
+                  Ready to Experience Exceptional Care?
+                </h2>
+                <p className="text-xl text-muted-foreground">
+                  Contact us today to learn how we can provide personalized care
+                  for you or your loved ones.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button asChild size="lg" className="w-full sm:w-auto">
+                    <Link
+                      href="/contact"
+                      className="text-white dark:text-black"
+                    >
+                      Contact Us
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Link>
+                  </Button>
+                  <Button
+                    asChild
+                    variant="outline"
+                    size="lg"
+                    className="w-full sm:w-auto"
+                  >
+                    <Link href="/services">Our Services</Link>
+                  </Button>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-6 pt-4">
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-primary" />
+                    <span className="text-muted-foreground">
+                      +1 (555) 123-4567
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Mail className="h-5 w-5 text-primary" />
+                    <span className="text-muted-foreground">
+                      info@essentialcare.com
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-xl opacity-30 blur-xl"></div>
+                <Image
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600&q=80"
+                  alt="Caring professional with a client"
+                  width={800}
+                  height={600}
+                  className="rounded-xl shadow-lg w-full h-auto relative z-10"
+                />
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </section>
   );

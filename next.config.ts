@@ -16,6 +16,9 @@ const nextConfig: NextConfig = {
       { hostname: "illustrations.popsy.co" },
       { hostname: "via.placeholder.com" },
       { hostname: "images.unsplash.com" },
+      { hostname: "ui-avatars.com" },
+      { hostname: "randomuser.me" },
+      { hostname: "images.pexels.com" },
     ],
   },
 };

@@ -7,19 +7,25 @@ import CallToAction from "@/components/call-to-action";
 import Hero from "@/components/hero";
 import Features from "@/components/features";
 import WhyUs from "@/components/why-us";
+import AboutUsSectionComponent from "@/components/company-info";
+import { TestimonialsSkeleton } from "@/components/skeletons";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Testimonials />
+      <AboutUsSectionComponent />
+      <Suspense fallback={<TestimonialsSkeleton />}>
+        <Testimonials />
+      </Suspense>
       <CareProcess />
       <QualityCommitment />
       <CommunityInvolvement />
       <CallToAction />
       <Features />
-      <FAQ />
       <WhyUs />
+      <FAQ />
     </>
   );
 }

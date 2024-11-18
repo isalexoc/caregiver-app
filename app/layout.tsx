@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 const inter = Inter({
@@ -24,9 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en" className={`${inter.variable} antialiased`}>
-        <body className="flex flex-col min-h-screen">
-          <ThemeProvider>
+      <html lang="en" suppressHydrationWarning>
+        <body
+          className={`${inter.variable} antialiased flex flex-col min-h-screen`}
+        >
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Header />
             <main className="flex-grow">{children}</main>
             <Footer />

@@ -15,8 +15,8 @@ body {
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
     --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 80%;
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
@@ -42,7 +42,7 @@ body {
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
     --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 14.9%;
@@ -97,7 +97,7 @@ body {
 
   /* Link styles */
   .link-primary {
-    @apply text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors;
+    @apply inline-block bg-contain bg-no-repeat pr-5;
   }
 
   /* Loading animation */
@@ -131,6 +131,11 @@ body {
 
   .process-step-number {
     @apply w-16 h-16 bg-primary rounded-full flex items-center justify-center text-primary-foreground text-2xl font-bold mb-4;
+  }
+
+  /* Added text-primary-foreground class */
+  .text-primary-foreground {
+    @apply text-[hsl(var(--primary-foreground))];
   }
 }
 
