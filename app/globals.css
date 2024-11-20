@@ -137,6 +137,11 @@ body {
   .text-primary-foreground {
     @apply text-[hsl(var(--primary-foreground))];
   }
+
+  .mobile-nav-icon {
+    width: 2.1rem !important;
+    height: 2.1rem !important;
+  }
 }
 
 /* Custom animations */
