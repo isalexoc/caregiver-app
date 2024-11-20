@@ -11,6 +11,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import Image from "next/image";
 
 export const components: {
   title: string;
@@ -124,7 +125,7 @@ export default function NavMenu() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-1 p-1 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+            <ul className="grid w-[400px] gap-1 p-1 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {resources.map((resource) => (
                 <ListItem
                   key={resource.title}
@@ -145,16 +146,25 @@ export default function NavMenu() {
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <Link
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="relative flex h-full w-full select-none flex-col justify-end rounded-md no-underline outline-none focus:shadow-md overflow-hidden group"
                     href="/"
                   >
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      Essential Care Services
+                    <Image
+                      src="/team3.jpg"
+                      alt="Essential Care Services background"
+                      layout="fill"
+                      objectFit="cover"
+                      className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="relative z-10 bg-black bg-opacity-50 p-6 w-full h-full flex flex-col justify-end">
+                      <div className=" mb-2 text-lg font-medium text-white">
+                        Essential Care Servicesss
+                      </div>
+                      <p className="text-sm leading-tight text-gray-200">
+                        Compassionate care for your loved ones, tailored to
+                        their unique needs.
+                      </p>
                     </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Compassionate care for your loved ones, tailored to their
-                      unique needs.
-                    </p>
                   </Link>
                 </NavigationMenuLink>
               </li>
