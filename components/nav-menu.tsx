@@ -43,6 +43,24 @@ export const components: {
     href: "/services/medical",
     description: "Medication reminders and health monitoring by professionals.",
   },
+  {
+    title: "Nutrition Support",
+    href: "/services/nutrition",
+    description:
+      "Personalized meal planning and dietary guidance for optimal health.",
+  },
+  {
+    title: "Exercise Support",
+    href: "/services/exercise",
+    description:
+      "Tailored physical activity programs to maintain and improve mobility.",
+  },
+  {
+    title: "Healthy Lifestyle Methodology",
+    href: "/services/healthy-lifestyle",
+    description:
+      "Holistic approach to promote overall well-being and quality of life.",
+  },
 ];
 
 export const resources: { title: string; href: string; description: string }[] =
@@ -158,7 +176,7 @@ export default function NavMenu() {
                     />
                     <div className="relative z-10 bg-black bg-opacity-50 p-6 w-full h-full flex flex-col justify-end">
                       <div className=" mb-2 text-lg font-medium text-white">
-                        Essential Care Servicesss
+                        Essential Care Services
                       </div>
                       <p className="text-sm leading-tight text-gray-200">
                         Compassionate care for your loved ones, tailored to
@@ -168,14 +186,17 @@ export default function NavMenu() {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/about/mission" title="Our Mission & Vision">
+              <ListItem href="/about/#mission" title="Our Mission & Vision">
                 Learn about our commitment to exceptional care.
               </ListItem>
-              <ListItem href="/about/team" title="Meet the Team">
+              <ListItem href="/about/#team" title="Meet the Team">
                 Get to know our dedicated caregivers and staff.
               </ListItem>
-              <ListItem href="/about/story" title="Our Story">
+              <ListItem href="/about/#story" title="Our Story">
                 Discover how we became leaders in home care services.
+              </ListItem>
+              <ListItem href="/contact" title="Contact Us">
+                Reach out to us for inquiries, feedback, or support.
               </ListItem>
             </ul>
           </NavigationMenuContent>

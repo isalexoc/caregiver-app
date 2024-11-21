@@ -1,3 +1,4 @@
+import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -42,21 +43,74 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/privacy-policy"
+                  className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-200"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terms-of-service"
+                  className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-200"
+                >
+                  Terms and Conditions
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/data-privacy"
+                  className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-200"
+                >
+                  Data Privacy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/cookie-policy"
+                  className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-200"
+                >
+                  Cookie Policy
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
             <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-gray-100">
               Contact Us
             </h3>
-            <p className="text-gray-700 dark:text-gray-300">
-              123 Care Street, City, State 12345
-            </p>
-            <p className="text-gray-700 dark:text-gray-300">
-              Phone: (123) 456-7890
-            </p>
-            <p className="text-gray-700 dark:text-gray-300">
-              Email: info@essentialcare.com
-            </p>
+
+            <div className="flex flex-col space-y-2">
+              <Link
+                href="https://maps.app.goo.gl/iEwh1FSAU9RYCTes8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-blue-600 dark:text-blue-400 mt-1"
+              >
+                <div className="flex space-x-2 text-gray-700 dark:text-gray-300 items-center">
+                  <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
+                  <div className="flex flex-col">
+                    <p>129 Pewter Lane Stafford VA, 22554</p>
+                  </div>
+                </div>
+              </Link>
+              <Link
+                href="tel:+15406813507"
+                className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 "
+              >
+                <Phone className="h-5 w-5" />
+                <span>(540) 681-3507</span>
+              </Link>
+              <Link
+                href="mailto:isaac87usa@gmail.com"
+                className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 "
+              >
+                <Mail className="h-5 w-5" />
+                <span>info@ecservices.app</span>
+              </Link>
+            </div>
           </div>
         </div>
         <div className="mt-8 text-center">
