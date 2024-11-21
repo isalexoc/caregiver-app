@@ -83,11 +83,11 @@ export default function Footer() {
             </h3>
 
             <div className="flex flex-col space-y-2">
-              <Link
+              <a
                 href="https://maps.app.goo.gl/iEwh1FSAU9RYCTes8"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-blue-600 dark:text-blue-400 mt-1"
+                className="text-sm text-blue-600 dark:text-blue-400 mt-1 hover:underline"
               >
                 <div className="flex space-x-2 text-gray-700 dark:text-gray-300 items-center">
                   <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
@@ -95,21 +95,21 @@ export default function Footer() {
                     <p>129 Pewter Lane Stafford VA, 22554</p>
                   </div>
                 </div>
-              </Link>
-              <Link
+              </a>
+              <a
                 href="tel:+15406813507"
-                className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 "
+                className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:underline"
               >
                 <Phone className="h-5 w-5" />
                 <span>(540) 681-3507</span>
-              </Link>
-              <Link
-                href="mailto:isaac87usa@gmail.com"
-                className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 "
+              </a>
+              <a
+                href="mailto:info@ecservices.app"
+                className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:underline"
               >
                 <Mail className="h-5 w-5" />
                 <span>info@ecservices.app</span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
