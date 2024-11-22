@@ -30,6 +30,9 @@ export const submitContactForm = async (state: unknown, formData: FormData) => {
       },
     });
 
+    const avatarUrl = "https://www.ecservices.app/avatar.png";
+    console.log("Avatar URL:", avatarUrl);
+
     // Prepare email content
     const mailOptions = {
       from: `"Info | Essential Care Services" <${process.env.EMAIL_FROM}>`,
