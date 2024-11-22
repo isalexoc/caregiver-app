@@ -4,6 +4,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import CrispChat from "@/components/crisp-chat";
+import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
@@ -94,6 +95,7 @@ export default function RootLayout({
             <main className="flex-grow">{children}</main>
             <Footer />
             <CrispChat />
+            <Toaster />
           </ThemeProvider>
         </body>
       </html>
