@@ -31,9 +31,6 @@ export const submitContactForm = async (state: unknown, formData: FormData) => {
       },
     });
 
-    const avatarUrl = "https://www.ecservices.app/avatar.png";
-    console.log("Avatar URL:", avatarUrl);
-
     // Prepare and send email to admin
 
     const adminMailOptions = getAdminMailOptions(

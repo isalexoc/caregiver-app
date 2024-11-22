@@ -19,7 +19,7 @@ export const getAdminMailOptions = (
   currentDate: string
 ): MailOptions => ({
   from: `"Info | Essential Care Services" <${process.env.EMAIL_FROM}>`,
-  to: "isaac87usa@gmail.com",
+  to: "isaac87usa@gmail.com, isaacorraiz@gmail.com",
   subject: "New Contact Form Submission - Essential Care Services",
   headers: {
     ...commonHeaders,
