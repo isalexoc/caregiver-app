@@ -1,13 +1,4 @@
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Clock,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-} from "lucide-react";
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Accordion,
@@ -16,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ContactForm from "@/components/contact-form";
+import Follow from "@/components/follow";
 
 export default function ContactPage() {
   return (
@@ -54,27 +46,7 @@ export default function ContactPage() {
             </CardContent>
           </Card>
 
-          <Card>
-            <CardHeader>
-              <CardTitle>Follow Us</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="flex space-x-4">
-                <a href="#" className="text-primary hover:text-primary/80">
-                  <Facebook className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-primary hover:text-primary/80">
-                  <Twitter className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-primary hover:text-primary/80">
-                  <Instagram className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-primary hover:text-primary/80">
-                  <Linkedin className="h-6 w-6" />
-                </a>
-              </div>
-            </CardContent>
-          </Card>
+          <Follow />
         </div>
       </div>
 

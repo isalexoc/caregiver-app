@@ -1,10 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import MobileNavSheet from "./mobile-nav-sheet";
+import MobileNavSheet, { SheetContext } from "./mobile-nav-sheet";
 import { DialogDescription, DialogTitle } from "@radix-ui/react-dialog";
 import { components, resources } from "@/components/nav-menu";
 import Image from "next/image";
 import logo from "@/public/ecslogo.png";
+import { useContext } from "react";
+import { useRouter } from "next/navigation";
 
 const combinedNavItems = [...components, ...resources];
 
@@ -58,6 +62,15 @@ function MobileNavItem({
   isLast,
   ...props
 }: MobileNavItemProps) {
+  const { setOpen } = useContext(SheetContext);
+  const router = useRouter();
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setOpen(false);
+    router.push(href);
+  };
+
   return (
     <Link
       href={href}
@@ -66,6 +79,7 @@ function MobileNavItem({
         !isLast && "border-b border-border",
         className
       )}
+      onClick={handleClick}
       {...props}
     >
       {children}

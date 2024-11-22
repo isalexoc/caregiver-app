@@ -1,5 +1,6 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
+import Follow from "@/components/follow";
 
 export default function Footer() {
   return (
@@ -10,9 +11,10 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-gray-100">
               Essential Care Services
             </h3>
-            <p className="text-gray-700 dark:text-gray-300">
+            <p className="text-gray-700 dark:text-gray-300 mb-6">
               Providing quality care services for those in need.
             </p>
+            <Follow />
           </div>
           <div>
             <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-gray-100">
