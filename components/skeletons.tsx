@@ -1,13 +1,13 @@
 import { Skeleton } from "@/components/ui/skeleton";
 import { Card, CardContent } from "@/components/ui/card";
 
-export function TestimonialsSkeleton() {
+export function TestimonialsSkeleton({ qty = 3 }) {
   return (
     <section className="bg-accent py-16 px-4 rounded-lg mb-24">
       <div className="container mx-auto">
         <Skeleton className="w-64 h-8 mx-auto mb-12" /> {/* SectionTitle */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[...Array(3)].map((_, index) => (
+          {[...Array(qty)].map((_, index) => (
             <Card key={index} className="bg-card overflow-visible">
               <CardContent className="p-6 relative">
                 <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">

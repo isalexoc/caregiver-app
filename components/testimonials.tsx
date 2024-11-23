@@ -51,8 +51,8 @@ const generateQuote = () => {
   } ${endings[Math.floor(Math.random() * endings.length)]}`;
 };
 
-async function getTestimonials(): Promise<Testimonial[]> {
-  const response = await fetch("https://randomuser.me/api/?results=3&nat=us");
+async function getTestimonials(qty: number): Promise<Testimonial[]> {
+  const response = await fetch(`https://randomuser.me/api/?results=${qty}`);
   const data = await response.json();
 
   return data.results.map((user: UserApi) => ({
@@ -63,8 +63,8 @@ async function getTestimonials(): Promise<Testimonial[]> {
   }));
 }
 
-export default async function Testimonials() {
-  const testimonials = await getTestimonials();
+export default async function Testimonials({ qty: number = 3 }) {
+  const testimonials = await getTestimonials(number);
 
   return (
     <section className="bg-accent py-16 px-4 rounded-lg mb-24">
