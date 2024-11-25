@@ -47,7 +47,7 @@ const FeatureCard = ({ title, description, icon, linkHref, bgImage }) => {
             className="flex items-center"
             aria-label={`Learn more about ${title}`}
           >
-            Learn More <span className="sr-only">about {title}</span>{" "}
+            {title} <span className="sr-only">about {title}</span>{" "}
             <ArrowRight className="ml-2 w-4 h-4" />
           </Link>
         </Button>
