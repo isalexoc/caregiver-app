@@ -10,9 +10,13 @@ import logo from "@/public/ecslogo.png";
 import { useContext } from "react";
 import { useRouter } from "next/navigation";
 
-const combinedNavItems = [...components, ...resources];
-
 export default function MobileNav() {
+  const aboutUs = {
+    title: "About Us",
+    href: "/about",
+    description: "Get to know our mission, values, and team.",
+  };
+  const combinedNavItems = [aboutUs, ...components, ...resources];
   return (
     <MobileNavSheet>
       <div className="flex flex-col items-center mb-6 pt-6">

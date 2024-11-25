@@ -8,6 +8,8 @@ import {
 } from "@/components/ui/accordion";
 import ContactForm from "@/components/contact-form";
 import Follow from "@/components/follow";
+import { Suspense } from "react";
+import OpenCrispChat from "@/components/open-crisp-chat";
 
 export default function ContactPage() {
   return (
@@ -42,6 +44,11 @@ export default function ContactPage() {
               <div className="flex items-center space-x-2">
                 <Clock className="h-5 w-5 text-primary" />
                 <span>Mon-Fri: 9am-5pm</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Suspense fallback={<div>Loading...</div>}>
+                  <OpenCrispChat />
+                </Suspense>
               </div>
             </CardContent>
           </Card>

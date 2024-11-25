@@ -68,21 +68,21 @@ const Features = () => {
             title="Personalized Care"
             description="We create tailored care plans to meet individual needs and preferences, ensuring the highest quality of life for our clients."
             icon={<Sparkles className="w-8 h-8 text-primary-foreground" />}
-            linkHref="/services/personalized-care"
+            linkHref="/services/personal-care"
             bgImage="https://images.pexels.com/photos/7551617/pexels-photo-7551617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           />
           <FeatureCard
             title="Experienced Caregivers"
             description="Our team consists of highly trained and compassionate professionals dedicated to providing exceptional care."
             icon={<UserCheck className="w-8 h-8 text-primary-foreground" />}
-            linkHref="/about/our-team"
+            linkHref="/about"
             bgImage="/team2.jpg"
           />
           <FeatureCard
             title="24/7 Support"
             description="We offer round-the-clock assistance, giving you and your loved ones peace of mind at all times."
             icon={<HeartPulse className="w-8 h-8 text-primary-foreground" />}
-            linkHref="/services/24-7-support"
+            linkHref="/contact"
             bgImage="/support.jpg"
           />
         </div>

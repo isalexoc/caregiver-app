@@ -72,7 +72,7 @@ export const resources: { title: string; href: string; description: string }[] =
     },
     {
       title: "Blog",
-      href: "/resources/blog",
+      href: "/blog",
       description: "Insightful articles on home care, health, and well-being.",
     },
     {
@@ -87,23 +87,23 @@ export const resources: { title: string; href: string; description: string }[] =
     },
     {
       title: "Insurance & Partnerships",
-      href: "/insurance-partnerships",
+      href: "/resources/insurance-partnerships",
       description: "Information on insurance coverage and partnerships.",
     },
     {
       title: "Pricing",
-      href: "/pricing",
+      href: "/resources/pricing",
       description:
         "Details on our pricing and payment options for care services.",
     },
     {
       title: "For Families",
-      href: "/for-families",
+      href: "/resources/for-families",
       description: "Resources and support for families of loved ones in care.",
     },
     {
       title: "For Patients",
-      href: "/for-patients",
+      href: "/resources/for-patients",
       description: "Information and resources for patients receiving care.",
     },
     {
@@ -113,7 +113,7 @@ export const resources: { title: string; href: string; description: string }[] =
     },
     {
       title: "Careers",
-      href: "/careers",
+      href: "/resources/careers",
       description:
         "Join our team of compassionate caregivers and professionals.",
     },

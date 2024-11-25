@@ -1,6 +1,8 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import Follow from "@/components/follow";
+import { Suspense } from "react";
+import OpenCrispChat from "@/components/open-crisp-chat";
 
 export default function Footer() {
   return (
@@ -112,6 +114,9 @@ export default function Footer() {
                 <Mail className="h-5 w-5" />
                 <span>info@ecservices.app</span>
               </a>
+              <Suspense fallback={<div>Loading...</div>}>
+                <OpenCrispChat />
+              </Suspense>
             </div>
           </div>
         </div>
