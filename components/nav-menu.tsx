@@ -117,6 +117,12 @@ export const resources: { title: string; href: string; description: string }[] =
       description:
         "Join our team of compassionate caregivers and professionals.",
     },
+    {
+      title: "Elevator Pitch",
+      href: "/resources/elevator-pitch",
+      description:
+        "Learn about our mission, values, and services in a nutshell. For investors and partners.",
+    },
   ];
 
 export default function NavMenu() {
