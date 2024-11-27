@@ -40,7 +40,7 @@ export function ElevatorPitchContent() {
   return (
     <section className="mb-12">
       <Card className="overflow-hidden">
-        <CardHeader className="bg-primary text-primary-foreground">
+        <CardHeader className="bg-primary dark:bg-gray-300 text-primary-foreground">
           <CardTitle className="text-2xl md:text-3xl text-white dark:text-black">
             Our Elevator Pitch
           </CardTitle>

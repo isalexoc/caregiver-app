@@ -12,7 +12,7 @@ import ContactForm from "./contact-form";
 
 export function ContactUs() {
   return (
-    <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
+    <section className="py-16 bg-gradient-to-b from-blue-50 dark:from-blue-50 dark:to-gray-500">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 text-blue-900">
           Get in Touch

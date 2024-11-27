@@ -71,7 +71,7 @@ export function MarketingSalesStrategy() {
       </MotionCard>
 
       <Tabs defaultValue="marketing" className="w-full">
-        <TabsList className="grid w-full grid-cols-1 md:grid-cols-4 mb-24 md:mb-10">
+        <TabsList className="grid w-full grid-cols-1 md:grid-cols-4   h-full">
           <TabsTrigger value="marketing" className="text-lg py-3">
             Marketing Strategy
           </TabsTrigger>
@@ -172,7 +172,7 @@ export function MarketingSalesStrategy() {
             </CardHeader>
             <CardContent>
               <ul className="grid md:grid-cols-2 gap-4">
-                <li className="flex items-start bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-lg">
+                <li className="flex items-start bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-500 dark:to-purple-500  p-4 rounded-lg">
                   <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-lg mb-1">
@@ -184,7 +184,7 @@ export function MarketingSalesStrategy() {
                     </p>
                   </div>
                 </li>
-                <li className="flex items-start bg-gradient-to-r from-green-50 to-teal-50 p-4 rounded-lg">
+                <li className="flex items-start bg-gradient-to-r from-green-50 to-teal-50  dark:from-green-500 dark:to-teal-500  p-4 rounded-lg">
                   <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-lg mb-1">
@@ -196,7 +196,7 @@ export function MarketingSalesStrategy() {
                     </p>
                   </div>
                 </li>
-                <li className="flex items-start bg-gradient-to-r from-yellow-50 to-orange-50 p-4 rounded-lg">
+                <li className="flex items-start bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-500 dark:to-orange-500  p-4 rounded-lg">
                   <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-lg mb-1">
@@ -208,7 +208,7 @@ export function MarketingSalesStrategy() {
                     </p>
                   </div>
                 </li>
-                <li className="flex items-start bg-gradient-to-r from-pink-50 to-red-50 p-4 rounded-lg">
+                <li className="flex items-start bg-gradient-to-r from-pink-50 to-red-50 dark:from-pink-500 dark:to-red-500 p-4 rounded-lg">
                   <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-lg mb-1">
@@ -317,17 +317,17 @@ export function MarketingSalesStrategy() {
             </CardHeader>
             <CardContent>
               <ul className="grid md:grid-cols-3 gap-4">
-                <li className="bg-gradient-to-br from-blue-100 to-blue-200 p-4 rounded-lg text-center">
+                <li className="bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-500 dark:to-blue-800 p-4 rounded-lg text-center">
                   <h4 className="font-semibold text-lg mb-2">
                     Personalized Care Plans
                   </h4>
                   <p>Tailored services meeting unique client needs</p>
                 </li>
-                <li className="bg-gradient-to-br from-green-100 to-green-200 p-4 rounded-lg text-center">
+                <li className="bg-gradient-to-br from-green-100 to-green-200 dark:from-green-500 dark:to-green-800 p-4 rounded-lg text-center">
                   <h4 className="font-semibold text-lg mb-2">24/7 Support</h4>
                   <p>Round-the-clock assistance for peace of mind</p>
                 </li>
-                <li className="bg-gradient-to-br from-purple-100 to-purple-200 p-4 rounded-lg text-center">
+                <li className="bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-500 dark:to-purple-80 p-4 rounded-lg text-center">
                   <h4 className="font-semibold text-lg mb-2">
                     Tech-Enabled Care
                   </h4>

@@ -92,13 +92,13 @@ export function BudgetProjections() {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
+    <section className="py-16   dark:from-gray-900 dark:to-gray-800 from-blue-50 to-white">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 text-blue-900">
           Financial Projections
         </h2>
         <Tabs defaultValue="overview" className="space-y-8">
-          <TabsList className="grid w-full grid-cols-1 md:grid-cols-4 mb-24 md:mb-0">
+          <TabsList className="grid w-full grid-cols-1 md:grid-cols-4  h-full">
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="initial-costs">Initial Costs</TabsTrigger>
             <TabsTrigger value="monthly-costs">Monthly Costs</TabsTrigger>
